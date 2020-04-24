@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 
 android {
@@ -56,6 +58,7 @@ dependencies {
 
     implementation "com.google.android.support:wearable:${rootProject.ext.googleWearVersion}"
     implementation "com.google.android.gms:play-services-wearable:${rootProject.ext.googlePlayServicesVersion}"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 def props = new Properties()

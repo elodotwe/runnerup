@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 group = "org.runnerup.hr"
 version = "1.0"
@@ -47,4 +49,5 @@ dependencies {
     if (rootProject.ext.antPlusLib) {
         implementation files("../" + antPlusLib)
     }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
